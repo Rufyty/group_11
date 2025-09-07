@@ -1,0 +1,133 @@
+/*
+ * Blog Project CSS
+ * Author: GROUP 11
+ * Copyright © 2025
+ * License: Free for educational use
+ */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x:hidden;
+  width:100%
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-sizing: border-box;
+  width:100%;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.post {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #4CAF50;
+  border-radius: 10px;
+}
+
+.post h2 {
+  margin: 0;
+  color: #222;
+}
+
+.post .meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.actions {
+  margin-top: 15px;
+}
+
+.actions a {
+  margin-right: 12px;
+ color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  input[type="text"],
+  textarea {
+    font-size: 15px;
+    padding: 10px;
+  }
+  button,
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .actions a {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .post h2 {
+    font-size: 18px;
+  }
+}
